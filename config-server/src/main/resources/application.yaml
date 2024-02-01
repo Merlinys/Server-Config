@@ -1,0 +1,12 @@
+server:
+  port:8081
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: config
+          uri: https://github.com/Merlinys/Server-Config
+          search-paths: config-data
+  applicaction:
+    name: Server-config
